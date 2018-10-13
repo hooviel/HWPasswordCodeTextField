@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'HWPasswordCodeTextField_Example' do
+  pod 'HWPasswordCodeTextField', :path => '../'
+
+  target 'HWPasswordCodeTextField_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
